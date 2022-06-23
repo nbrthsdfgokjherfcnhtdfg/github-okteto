@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: heandr
+  name: badertion
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: heandr
+      app: badertion
   template:
     metadata:
       labels:
-        app: heandr
+        app: badertion
     spec:
       containers:
-      - image: okteto.dev/heandr:latest
-        name: heandr
+      - image: okteto.dev/badertion:latest
+        name: badertion
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "kissanime.ru.net"
+          value: "www.moviecrumbs.net"
         - name: Vless_UUID
-          value: "5aa889fc-2f3d-4879-922a-6659b712d105"
+          value: "0db2e44c-3e8e-41ea-a9fd-479c78058079"
         - name: Vless_Path
-          value: "/BYfkj0rf"
+          value: "/r5hcvoit"
         - name: Vmess_UUID
-          value: "5aa889fc-2f3d-4879-922a-6659b712d105"
+          value: "0db2e44c-3e8e-41ea-a9fd-479c78058079"
         - name: Vmess_Path
-          value: "/sdiu64i4rt"
+          value: "/ydf2ghxc"
         - name: Share_Path
-          value: "/Share501"
+          value: "/Share721"
