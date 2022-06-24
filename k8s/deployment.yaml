@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: violiert
+  name: uioervchza
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: violiert
+      app: uioervchza
   template:
     metadata:
       labels:
-        app: violiert
+        app: uioervchza
     spec:
       containers:
-      - image: okteto.dev/violiert:latest
-        name: violiert
+      - image: okteto.dev/uioervchza:latest
+        name: uioervchza
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www4.watchserieshd.tv"
+          value: "moviemora.com"
         - name: Vless_UUID
-          value: "22dc5350-2031-4c39-93d9-099767500a1d"
+          value: "ec24ffc7-4feb-4d97-9677-c9b9fd0e55f2"
         - name: Vless_Path
-          value: "/LKAS34YX"
+          value: "/Gsdfsdui"
         - name: Vmess_UUID
-          value: "22dc5350-2031-4c39-93d9-099767500a1d"
+          value: "ec24ffc7-4feb-4d97-9677-c9b9fd0e55f2"
         - name: Vmess_Path
-          value: "/rejxcmla"
+          value: "/kioedhv"
         - name: Share_Path
-          value: "/Share214"
+          value: "/Share054"
