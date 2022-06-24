@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: badertion
+  name: jkeactrgy
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "badertion"
+  - name: "jkeactrgy"
     port: 8080
   selector:
-    app: badertion
+    app: jkeactrgy
