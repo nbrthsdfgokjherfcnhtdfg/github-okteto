@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jkeactrgy
+  name: violiert
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: jkeactrgy
+      app: violiert
   template:
     metadata:
       labels:
-        app: jkeactrgy
+        app: violiert
     spec:
       containers:
-      - image: okteto.dev/jkeactrgy:latest
-        name: jkeactrgy
+      - image: okteto.dev/violiert:latest
+        name: violiert
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.moviecrumbs.net"
+          value: "www4.watchserieshd.tv"
         - name: Vless_UUID
-          value: "4c4d647e-4dac-485c-92d1-e1b249241466"
+          value: "22dc5350-2031-4c39-93d9-099767500a1d"
         - name: Vless_Path
-          value: "/FAEL05D"
+          value: "/LKAS34YX"
         - name: Vmess_UUID
-          value: "4c4d647e-4dac-485c-92d1-e1b249241466"
+          value: "22dc5350-2031-4c39-93d9-099767500a1d"
         - name: Vmess_Path
-          value: "/CIOKT96"
+          value: "/rejxcmla"
         - name: Share_Path
-          value: "/Share369"
+          value: "/Share214"
