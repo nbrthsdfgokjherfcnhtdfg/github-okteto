@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: badertion
+  name: jkeactrgy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: badertion
+      app: jkeactrgy
   template:
     metadata:
       labels:
-        app: badertion
+        app: jkeactrgy
     spec:
       containers:
-      - image: okteto.dev/badertion:latest
-        name: badertion
+      - image: okteto.dev/jkeactrgy:latest
+        name: jkeactrgy
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "www.moviecrumbs.net"
         - name: Vless_UUID
-          value: "0db2e44c-3e8e-41ea-a9fd-479c78058079"
+          value: "4c4d647e-4dac-485c-92d1-e1b249241466"
         - name: Vless_Path
-          value: "/r5hcvoit"
+          value: "/FAEL05D"
         - name: Vmess_UUID
-          value: "0db2e44c-3e8e-41ea-a9fd-479c78058079"
+          value: "4c4d647e-4dac-485c-92d1-e1b249241466"
         - name: Vmess_Path
-          value: "/ydf2ghxc"
+          value: "/CIOKT96"
         - name: Share_Path
-          value: "/Share721"
+          value: "/Share369"
